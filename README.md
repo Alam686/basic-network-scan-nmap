@@ -10,7 +10,14 @@ Perform a basic network scan to identify open ports and services.
 scanme.nmap.org
 
 ## Command Used
+1. Basic Scan:
 nmap scanme.nmap.org
+
+2. Service Version Detection:
+nmap -sV scanme.nmap.org
+
+3. Aggressive Scan:
+nmap -A scanme.nmap.org
 
 ## Scan Results
 (See scan-results.txt)
@@ -24,8 +31,6 @@ nmap scanme.nmap.org
   - 31337 (Unusual service)
 
 ## Analysis
-### Analysis
-
 - Port 22 (SSH): Allows remote access. This service should be secured to prevent unauthorized login attempts.
 - Port 80 (HTTP): Indicates a web server is running. Web services should be checked for common vulnerabilities.
 - Port 9929: Identified as Nping service, typically used for testing. Not commonly found in production environments.
