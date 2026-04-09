@@ -1,5 +1,0 @@
-nmap -sS -sV 192.168.1.1
-
-PORT   STATE SERVICE VERSION
-80     open  http
-443    open  https
