@@ -49,3 +49,27 @@ The target exposes multiple services, increasing the attack surface.
 
 ### Conclusion
 The target is limiting service information exposure, which is a security measure to reduce attack surface.
+
+--------------------------------------------
+## Aggressive Scan (-A)
+
+### Observation
+- Service versions detected:
+  - OpenSSH 6.6.1p1
+  - Apache 2.4.7
+- OS detected as Linux
+- Additional details like SSH keys and HTTP title obtained
+
+### Analysis
+- Older versions of SSH and Apache may contain vulnerabilities
+- Aggressive scan reveals more information compared to basic and -sV scans
+- Firewall restrictions can be bypassed using deeper scan techniques
+
+### Insight
+Different scan types provide different levels of visibility:
+- Basic scan → Ports only
+- -sV → Limited info (sometimes blocked)
+- -A → Detailed system and service information
+
+### Conclusion
+Aggressive scanning provides a complete attack surface, helping identify potential vulnerabilities and system details.

@@ -29,3 +29,16 @@ PORT      STATE SERVICE    VERSION
 31337/tcp open  tcpwrapped
 
 Service detection performed.
+
+----------------------------------------
+sudo nmap -A scanme.nmap.org
+
+Starting Nmap 7.98 ( https://nmap.org )
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up.
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 6.6.1p1 Ubuntu
+80/tcp    open  http       Apache httpd 2.4.7 ((Ubuntu))
+9929/tcp  open  nping-echo Nping echo
+31337/tcp open  tcpwrapped
+OS: Linux
