@@ -12,12 +12,16 @@ scanme.nmap.org
 ## Command Used
 1. Basic Scan:
 nmap scanme.nmap.org
-
 2. Service Version Detection:
 nmap -sV scanme.nmap.org
-
 3. Aggressive Scan:
 nmap -A scanme.nmap.org
+
+## Methodology
+1. Performed an initial scan to identify open ports on the target system.
+2. Conducted service version detection to gather information about running services.
+3. Executed an aggressive scan to obtain detailed system and service information.
+4. Analyzed the results to identify potential security risks and unusual services.
 
 ## Scan Results
 (See scan-results.txt)
