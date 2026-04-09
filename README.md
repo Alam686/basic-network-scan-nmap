@@ -10,10 +10,32 @@ Perform a basic network scan to identify open ports and services.
 scanme.nmap.org
 
 ## Command Used
+1. Basic Scan:
 nmap scanme.nmap.org
+2. Service Version Detection:
+nmap -sV scanme.nmap.org
+3. Aggressive Scan:
+nmap -A scanme.nmap.org
+
+## Methodology
+1. Performed an initial scan to identify open ports on the target system.
+2. Conducted service version detection to gather information about running services.
+3. Executed an aggressive scan to obtain detailed system and service information.
+4. Analyzed the results to identify potential security risks and unusual services.
 
 ## Scan Results
 (See scan-results.txt)
+
+## Screenshots
+
+1. Basic Scan  
+![Basic Scan](screenshots/basic-scan.png)
+
+2. Service Version Detection  
+![Service Scan](screenshots/service-scan.png)
+
+3. Aggressive Scan  
+![Aggressive Scan](screenshots/aggressive-scan.png)
 
 ## Findings
 - Host is up with low latency (28ms)
@@ -24,10 +46,10 @@ nmap scanme.nmap.org
   - 31337 (Unusual service)
 
 ## Analysis
-- Port 22 (SSH): Allows remote login, risk of brute force attack
-- Port 80 (HTTP): Web server present, possible web vulnerabilities
-- Port 9929: Used for Nmap testing, not common in production
-- Port 31337: Unusual port, may indicate custom or backdoor service
+- Port 22 (SSH): Allows remote access. This service should be secured to prevent unauthorized login attempts.
+- Port 80 (HTTP): Indicates a web server is running. Web services should be checked for common vulnerabilities.
+- Port 9929: Identified as Nping service, typically used for testing. Not commonly found in production environments.
+- Port 31337: Uncommon port. Could be associated with a custom or non-standard service and requires further investigation.
 
 ## Conclusion
 The target exposes multiple services, increasing the attack surface.
