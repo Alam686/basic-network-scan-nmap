@@ -31,3 +31,21 @@ nmap scanme.nmap.org
 
 ## Conclusion
 The target exposes multiple services, increasing the attack surface.
+
+----------------------------------------------------
+## Service Version Scan (-sV)
+
+### Observation
+- All ports show "tcpwrapped"
+- No version information detected
+
+### Analysis
+- "tcpwrapped" means the service is protected or not revealing its details
+- This usually happens due to firewall rules or access restrictions
+
+### Insight
+- Basic scan showed service names (ssh, http)
+- Version scan hid details → indicates defensive mechanism
+
+### Conclusion
+The target is limiting service information exposure, which is a security measure to reduce attack surface.
