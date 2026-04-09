@@ -29,13 +29,13 @@ nmap -A scanme.nmap.org
 ## Screenshots
 
 1. Basic Scan  
-![Basic Scan](screenshots/basic-scan.png)
+![Basic Scan](screenshots/basic-scan.PNG)
 
 2. Service Version Detection  
-![Service Scan](screenshots/service-scan.png)
+![Service Scan](screenshots/service-scan.PNG)
 
 3. Aggressive Scan  
-![Aggressive Scan](screenshots/aggressive-scan.png)
+![Aggressive Scan](screenshots/aggressive-scan.PNG)
 
 ## Findings
 - Host is up with low latency (28ms)
