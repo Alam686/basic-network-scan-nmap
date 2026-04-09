@@ -26,6 +26,17 @@ nmap -A scanme.nmap.org
 ## Scan Results
 (See scan-results.txt)
 
+## Screenshots
+
+1. Basic Scan  
+![Basic Scan](screenshots/basic-scan.png)
+
+2. Service Version Detection  
+![Service Scan](screenshots/service-scan.png)
+
+3. Aggressive Scan  
+![Aggressive Scan](screenshots/aggressive-scan.png)
+
 ## Findings
 - Host is up with low latency (28ms)
 - 4 open ports detected:
